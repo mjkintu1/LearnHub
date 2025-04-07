@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - LearnHub Uganda</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">LearnHub Uganda</a>
+        </nav>
+    </header>
+    <main>
+        <section class="signup-section">
+            <div class="login-container">
+                <h2>Create an Account</h2>
+                <form action="process_signup.php" method="POST" class="signup-form">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Full Name" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Email Address" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+
+                    <button type="submit" class="btn-primary">Sign Up</button>
+                </form>
+                <p>Already have an account? <a href="login.html">Login here</a></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 LearnHub Uganda. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

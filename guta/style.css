@@ -1,0 +1,101 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>LearnHub Uganda</title><link rel="stylesheet" href="styles.css"><style>body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+    color: #333;
+    text-align: center;
+    line-height: 1.6;
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+}
+
+header {
+    background: linear-gradient(90deg, #007BFF, #0056b3);
+    color: white;
+    padding: 1.5em 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 25px 25px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffdd57;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section#contact {
+    text-align: center;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #28a745, #218838);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #218838, #1e7e34);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background: #222;
+    color: #ccc;
+    padding: 20px;
+    font-size: 0.9rem;
+    text-align: center;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 25px 25px 0 0;
+}
+
+</style></head><body><header><h1>LearnHub Uganda</h1><nav><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header><section id="home"><h2>Empowering Education for a Brighter Future</h2><p>Access free learning materials,
+past papers,
+and video tutorials to enhance your education.</p><a href="#resources" class="btn">Start Learning</a></section><section id="resources"><h2>Featured Subjects</h2><ul><li>Mathematics - Learn algebra,
+geometry,
+and calculus through interactive lessons.</li><li>Science - Explore physics,
+chemistry,
+and biology with engaging tutorials.</li><li>ICT - Improve your digital skills with programming and computer literacy courses.</li><li>English - Enhance your language skills with grammar,
+writing,
+and reading exercises.</li></ul><p>Explore our library of educational resources,
+including downloadable past papers and video tutorials.</p></section><section id="about"><h2>About LearnHub Uganda</h2><p>LearnHub Uganda is dedicated to providing quality education for students across the country.</p><p>Our mission is to make learning resources accessible to all,
+bridging the education gap and empowering students for a better future.</p><p>By aligning with SDG 4 (Quality Education) and Uganda’s Vision 2040,
+we aim to create a brighter tomorrow through knowledge.</p></section><section id="contact"><h2>Contact Us</h2><p>Have questions or need specific learning materials? Reach out to us!</p><p>Email: support@learnhubuganda.com</p><p>Follow us on social media:</p><ul><li><a href="#">Facebook</a></li><li><a href="#">Twitter</a></li><li><a href="#">Instagram</a></li></ul></section><footer><p>&copy;
+2025 LearnHub Uganda | Promoting Quality Education</p></footer></body></html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub Uganda</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 1em 2em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            transition: background 0.3s;
+        }
+        
+        header.scrolled {
+            background: #007BFF;
+        }
+        
+        nav ul {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        
+        nav ul li a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        #home {
+            height: 100vh;
+            background: url('learning.jpg') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+        
+        #home h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        
+        #home p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1em;
+            transition: background 0.3s, transform 0.2s;
+        }
+        
+        .btn:hover {
+            background: #218838;
+            transform: scale(1.05);
+        }
+        
+        #resources {
+            padding: 60px 20px;
+            background-color: #fff;
+        }
+        
+        #resources h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2em;
+        }
+        
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .card-button {
+            display: block;
+            background: none;
+            border: none;
+            color: #007BFF;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1em;
+            padding: 10px;
+            transition: color 0.3s;
+            text-decoration: none;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .card-button:hover {
+            color: #0056b3;
+        }
+        
+        footer {
+            background: #222;
+            color: #bbb;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        footer p {
+            margin: 0;
+        }
+        
+        footer .social-links a {
+            color: #bbb;
+            margin-left: 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        footer .social-links a:hover {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>LearnHub Uganda</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div>
+            <a href="login.html" class="btn" style="margin-right: 10px;">Login</a>
+            <a href="login.html" class="btn">Sign Up</a>
+        </div>
+    </header>
+
+    <section id="home">
+        <h2>Empowering Education for a Brighter Future</h2>
+        <p>Access free learning materials, past papers, and video tutorials to enhance your education.</p>
+        <a href="#resources" class="btn">Start Learning</a>
+    </section>
+
+    <section id="resources">
+        <h2>Featured Subjects</h2>
+        <div class="card-container">
+            <div class="card">
+                <a href="mathematics.html" class="card-button">Mathematics</a>
+            </div>
+            <div class="card">
+                <a href="science.html" class="card-button">Science</a>
+            </div>
+            <div class="card">
+                <a href="ict.html" class="card-button">ICT</a>
+            </div>
+            <div class="card">
+                <a href="english.html" class="card-button">English</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 LearnHub Uganda | Promoting high quality education</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <script>
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>
